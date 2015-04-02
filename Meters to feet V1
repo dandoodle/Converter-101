@@ -1,5 +1,7 @@
-if (Choice==2){ //When the user puts in 2 it comes up with the m to feet converter
-        System.out.print("Enter M: ");
+double feet = 3.2808399;
+
+if (Choice==1){ //When the user puts in 2 it comes up with the m to feet converter
+        System.out.print("Enter Meters: ");
         double m = user_input.nextDouble();
         double answer = m * feet;
         System.out.println(answer);
