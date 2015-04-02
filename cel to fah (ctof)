@@ -1,0 +1,8 @@
+public static double ctof(){ 
+        double x =0;        //x is declared as 0 for the start of the method
+        Scanner userVal=new Scanner(System.in);       //Scanner for the value the user wants to convert
+        System.out.println("You have entered 3\nEnter C:"); //message..
+        x=userVal.nextDouble();   //takes the users input and stores the value in x
+         return x;   //returns x for the main method thing
+  
+           }
