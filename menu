@@ -1,0 +1,17 @@
+public static int menu()    {  //the method is called menu
+       int choice=-1;         //declares choice as -1(makes it run)
+           System.out.println("Welcome to converter 101"
+                   + "\n");
+           
+           Scanner userChoice=new Scanner(System.in);    //Scanner for the menu
+               System.out.println("-----MENU-----"
+                       + "\nEnter 1 for"
+                       + "\nEnter 2 for"
+                       + "\nEnter 3 for Celsius to Fahrenheit converter"
+                       + "\nEnter 4 for"
+                       + "\nEnter 5 for"
+                       + "\n\nEnter 9 to exit");
+               choice=userChoice.nextInt(); //takes the users input and redirects..
+               choice-=1;   //array positions are 1 less than the menu options.. this subtracts 1 from the users input
+               return choice;
+}
