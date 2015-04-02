@@ -1,0 +1,26 @@
++int choice;    
++        double userInputValue;
++        double [] convert=new double[5];
++            
++            convert[0]=0.393700787;   //cm to inch
++            convert[1]=3.2808399;     //met to feet
++            convert[2]=9/5+32;        //CtoF     //does equation first,,
++            convert[3]=0.032808399;   //cm to feet
++            convert[4]=1.609344;      //miles to km
++            
++            Scanner userChoice=new Scanner(System.in);    //Scanner for the menu
++            
++            Scanner userVal=new Scanner(System.in);       //Scanner for the value the user wants to convert
++                      
++            System.out.println("enter 1-5");              //temp menu
++            choice=userChoice.nextInt();                  // accepts the users input, redirects appropriately
++            choice-=1;                                    //reduces choice by 1 to select correct array..
++            
++            
++            if(choice==1){        //met to feet converter//example of menu selection (this will run when user inputs 2)
++                System.out.println("enter val");
++                userInputValue=userVal.nextDouble();      //gets value to convert
++                
++                double val=userInputValue*convert[choice];  //new variable val=users input value and etc etc
++                
++                System.out.println(""+val);             //prints out converted value
