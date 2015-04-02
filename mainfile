@@ -26,5 +26,7 @@ public class ConverterAssessment {
        x = ctof();      //ctof is the name of my method. i am only wanting to return 'x' (users input) from the method
        
        convert[2]=x*9/5+32; //this declares value[2] from my array, it uses 'x' in the equation
-        System.out.println(x+" C = "+convert[2]+" F"); //prints x's original value then what the value is equal to in fahrenheit
+        System.out.println(x+" C = "+convert[2]+" F\n\n"); //prints x's original value then what the value is equal to in fahrenheit
+        
+        menu(); //takes you back to menu
        }
