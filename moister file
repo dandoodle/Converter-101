@@ -1,0 +1,70 @@
+package converterassessment;
+
+import java.util.Scanner;
+public class ConverterAssessment {
+
+    public static void main(String[] args) {
+       int choice=5;               //menu selector
+       double x;                    //temperature converter userInput value
+       double userInputValue;      //if this doesnt get used then delete it..
+       double value;                //output value
+       double [] convert=new double[5];  //array dec
+       
+       
+       System.out.println("Welcome to converter 101"                
+                   + "\n");                             //Welcome message put here so that it only runs once
+       
+                while(choice!=-1){ //while choice does not equal the exit number
+                    
+           Scanner userChoice=new Scanner(System.in);    //Scanner for the menu
+               System.out.println("-----MENU-----"
+                       + "\nEnter 1 for"
+                       + "\nEnter 2 for"
+                       + "\nEnter 3 for Celsius to Fahrenheit converter"
+                       + "\nEnter 4 for"
+                       + "\nEnter 5 for"
+                       + "\n\nEnter 0 to exit");
+               choice=userChoice.nextInt();
+               choice-=1;                               //Subtract 1 from the users choice to align it with array
+               
+                
+                
+                   
+                   
+           
+                             
+       if(choice==2){ //CtoF converter.. DH
+           
+       
+        Scanner userVal=new Scanner(System.in);       //Scanner for the value the user wants to convert
+        System.out.println("You have entered 3\nEnter C:");
+        x=userVal.nextDouble();     
+        convert[2]=x*9/5+32;        //the array is placed in the if statment so that the value of x will be filled
+        System.out.println(x+" C = "+convert[2]+" F\n\n");
+        
+                        } //end of CtoF if statement
+       
+       
+       
+       
+       
+        
+        
+       if (choice>4||choice<-1){        //if a value not listed on the menu is input,, an error will be displayed
+           System.out.println("\n\n===Invalid input=="
+                + "\n===Enter a valid input===\n");
+           
+       }//end of errorMsg if statement
+       
+       if (choice==-1){         //outro statment
+           System.out.println("Thank you for using converter 101\n\n"
+             + "===This program was made by==="
+             + "\nName1"
+             + "\nName2"
+             + "\nName3"
+             + "\nName4"
+             + "\nName5");
+       }//end of exit if statement
+    }  //end of while statement
+} //end of main method
+} //end of the start of the thingy
