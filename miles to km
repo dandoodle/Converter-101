@@ -1,0 +1,10 @@
+        
+        
+         else if(choice==4){
+          
+          System.out.println("You have entered 5. Enter km: ");
+          userInputVal = user_input.nextDouble();
+          value = userInputValue*convert[choice];
+          System.out.println(userInputValue+"mi = " +val+"km");
+          }
+      
