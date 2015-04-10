@@ -9,7 +9,7 @@ public static int menu()    {  //the method is called menu
                        + "\nEnter 2 for"
                        + "\nEnter 3 for Celsius to Fahrenheit converter"
                        + "\nEnter 4 for"
-                       + "\nEnter 5 for"
+                       + "\nEnter 5 for Miles to Kilometres converter"
                        + "\n\nEnter 9 to exit");
                choice=userChoice.nextInt(); //takes the users input and redirects..
                choice-=1;   //array positions are 1 less than the menu options.. this subtracts 1 from the users input
