@@ -15,7 +15,7 @@ public class ConverterAssessment {
                    + "\n");                             //Welcome message put here so that it only runs once
        
                 while(choice!=-1){ //while choice does not equal the exit number
-                    
+                                //while loop bracket remains open..
            Scanner userChoice=new Scanner(System.in);    //Scanner for the menu
                System.out.println("-----MENU-----"
                        + "\nEnter 1 for"
@@ -26,7 +26,7 @@ public class ConverterAssessment {
                        + "\n\nEnter 0 to exit");
                choice=userChoice.nextInt();
                choice-=1;                               //Subtract 1 from the users choice to align it with array
-               
+                                        
                 
                 
                    
