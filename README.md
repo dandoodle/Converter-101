@@ -7,6 +7,7 @@
               
               val = userInputValue*convert[choice];
               
-              System.out.println(""+val);
+              System.out.println(userInputValue+"mi = " +val+"km");
               
+              menu();
           }
