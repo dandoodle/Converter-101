@@ -5,3 +5,4 @@ if (Choice==2){ //When the user puts in 2 it comes up with the m to feet convert
         double m = user_input.nextDouble();
         double answer = m * feetm;
         System.out.println(answer);
+}
