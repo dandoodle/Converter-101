@@ -2,5 +2,5 @@ ifelse (Choice==1){ //When the user puts in 1 it comes up with the m to feet con
         System.out.print("Enter Meters: ");
         double m = user_input.nextDouble();
         double answer = m * convert[1];
-        System.out.println(answer);
+        System.out.println(" "+val);
 }
