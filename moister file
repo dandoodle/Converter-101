@@ -4,12 +4,19 @@ import java.util.Scanner;
 public class ConverterAssessment {
 
     public static void main(String[] args) {
+    Scanner user_input = new Scanner(System.in );
+       
        int choice=5;               //menu selector
        double x;                    //temperature converter userInput value
        double userInputValue;      //if this doesnt get used then delete it..
        double value;                //output value
        double [] convert=new double[5];  //array dec
        
+            convert[0]=0.393700787;   //cm to inch
+            convert[1]=3.2808399;     //met to feet
+            convert[2]=9/5+32;        //CtoF     //does equation first,,
+            convert[3]=0.032808399;   //cm to feet
+            convert[4]=1.609344;
        
        System.out.println("Welcome to converter 101"                
                    + "\n");                             //Welcome message put here so that it only runs once
@@ -22,7 +29,7 @@ public class ConverterAssessment {
                        + "\nEnter 2 for"
                        + "\nEnter 3 for Celsius to Fahrenheit converter"
                        + "\nEnter 4 for"
-                       + "\nEnter 5 for"
+                       + "\nEnter 5 for Miles to Kilometre"
                        + "\n\nEnter 0 to exit");
                choice=userChoice.nextInt();
                choice-=1;                               //Subtract 1 from the users choice to align it with array
@@ -44,12 +51,15 @@ public class ConverterAssessment {
         
                         } //end of CtoF if statement
        
+       else if(choice==4){
+          
+          System.out.println("You have entered 5. Enter km: ");
+          userInputVal = user_input.nextDouble();
+          value = userInputValue*convert[choice];
+          System.out.println(userInputValue+"mi = " +val+"km");
+          }
        
        
-       
-       
-        
-        
        if (choice>4||choice<-1){        //if a value not listed on the menu is input,, an error will be displayed
            System.out.println("\n\n===Invalid input=="
                 + "\n===Enter a valid input===\n");
