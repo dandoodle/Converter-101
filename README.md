@@ -20,5 +20,5 @@ else if(choice==3)
 	
 	  //display total
 	  System.out.println("Converted value in Feet:"+feet); 
-	  
+	
       }
