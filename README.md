@@ -8,12 +8,12 @@
        
        rate = 0.032808399; //assign values
        
-       Scanner input = new Scanner(System.in);                         //ask to input centimetre values
+       Scanner input = new Scanner(System.in);                 //ask to input centimetre values
        System.out.println("Enter value in Centimetres:");
        centimetres = input.nextDouble();
        
-       feet =  Math.round((rate * centimetres)*100.0)/100.0;           //calculate feet
+       feet =  Math.round((rate * centimetres)*100.0)/100.0;   //calculate feet
        
-       System.out.println("Converted value in Feet:"+feet);            //display total
+       System.out.println("Converted value in Feet:"+feet);    //display total
        
        }
