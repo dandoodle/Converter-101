@@ -40,7 +40,7 @@ public class ConverterAssessment {
                 
                else if (choice==1){ //Jordan
                //When the user puts in 1 it comes up with the m to feet converter
-        System.out.print("You have entered 2\nEnter M:");
+        System.out.println("You have entered 2\nEnter M:");
         userInputValue = userValScanner.nextDouble();
         value = userInputValue * convert[1];
         System.out.printf(userInputValue+" Meters = %.2f Feet\n\n", value); 
