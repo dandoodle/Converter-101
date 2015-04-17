@@ -4,64 +4,86 @@ import java.util.Scanner;
 public class ConverterAssessment {
 
     public static void main(String[] args) {
-    Scanner user_input = new Scanner(System.in );
-       
+    
+       Scanner userValScanner=new Scanner(System.in);       //Scanner for the value the user wants to convert   
        int choice=5;               //menu selector
-       double x;                    //temperature converter userInput value
-       double userInputValue;      //if this doesnt get used then delete it..
+       double userInputValue;      //the value of the users input
        double value;                //output value
        double [] convert=new double[5];  //array dec
        
-            convert[0]=0.393700787;   //cm to inch
-            convert[1]=3.2808399;     //met to feet
-            convert[2]=9/5+32;        //CtoF     //does equation first,,
-            convert[3]=0.032808399;   //cm to feet
-            convert[4]=1.609344;
+            convert[0]=0.393700787;     //cm to inch
+            convert[1]=3.2808399;       //met to feet
+         // convert[2]=userInputValue*9/5+32    CtoF     keep as comment,(to look neat i guess) ,, used later in code
+            convert[3]=0.032808399;     //cm to feet
+            convert[4]=1.609344;        //Miles to KM
        
        System.out.println("Welcome to converter 101"                
-                   + "\n");                             //Welcome message put here so that it only runs once
+                   + "\n");                             //Welcome message put above while statment so that it only runs once
        
                 while(choice!=-1){ //while choice does not equal the exit number
                                 //while loop bracket remains open..
            Scanner userChoice=new Scanner(System.in);    //Scanner for the menu
                System.out.println("-----MENU-----"
-                       + "\nEnter 1 for"
-                       + "\nEnter 2 for"
+                       + "\nEnter 1 for an error message"
+                       + "\nEnter 2 for Meters to feet"
                        + "\nEnter 3 for Celsius to Fahrenheit converter"
-                       + "\nEnter 4 for"
+                       + "\nEnter 4 for Centimeters to Feet"
                        + "\nEnter 5 for Miles to Kilometre"
                        + "\n\nEnter 0 to exit");
                choice=userChoice.nextInt();
                choice-=1;                               //Subtract 1 from the users choice to align it with array
-                                        
+                      
+               if (choice==0){//Iago
+                   System.out.println("===Error===\n===Missing Files===\n\n"); 
+               }//end of choice 0
+               
                 
-                
-                   
-                   
-           
-                             
-       if(choice==2){ //CtoF converter.. DH
-           
-       
-        Scanner userVal=new Scanner(System.in);       //Scanner for the value the user wants to convert
-        System.out.println("You have entered 3\nEnter C:");
-        x=userVal.nextDouble();     
-        convert[2]=x*9/5+32;        //the array is placed in the if statment so that the value of x will be filled
-        System.out.println(x+" C = "+convert[2]+" F\n\n");
+               else if (choice==1){ //Jordan
+               //When the user puts in 1 it comes up with the m to feet converter
+        System.out.print("You have entered 2\nEnter M:");
+        userInputValue = userValScanner.nextDouble();
+        value = userInputValue * convert[1];
+        System.out.printf(userInputValue+" Meters = %.2f Feet\n\n", value); 
         
-                        } //end of CtoF if statement
+        //the printf method will be used throughout to take advantage of the %.2f feature which will round the answe to 2dp 
+        
+                            }//end of choice 1
+                                        
+                else if (choice==2){ //Daniel
+        
+        System.out.println("You have entered 3\nEnter C:");
+        userInputValue=userValScanner.nextDouble();     
+        convert[2]=userInputValue*9/5+32;        //the array is placed in the if statment so that the value of x will be filled
+        System.out.printf(userInputValue+" C =%.2f F\n\n", convert[2]);
+        
+                        } //end of choice 2
        
-       else if(choice==4){
+       
+       
+       else if(choice==3) //Arbhell
+   {
+   // 1cm = 0.032808399 feet
+   // declare variables
+  // double feet, rate;
+  // rate = 0.032808399; //assign values //I have changed this as 'rate' holds the same value of 'convert[3]'
+                 
+   System.out.println("You have entered 4 \nEnter Cm");
+   userInputValue = userValScanner.nextDouble();
+   value =  convert[3] * userInputValue;//i dont quite understand this,-- *100.0/100.0;-- seems contradictory   //calculate feet
+   System.out.printf(userInputValue+" Cm = %.2f Feet\n\n",value);    //display total
+                     }//end of choice 3
+       
+       else if(choice==4){ //Leanna
           
-          System.out.println("You have entered 5. Enter km: ");
-          userInputVal = user_input.nextDouble();
-          value = userInputValue*convert[choice];
-          System.out.println(userInputValue+"mi = " +val+"km");
-          }
+          System.out.println("You have entered 5 \nEnter Miles: ");
+          userInputValue = userValScanner.nextDouble();
+          value = userInputValue*convert[4];
+          System.out.printf(userInputValue+" Mi = %.2f Km\n\n", value);
+          }//end of choice 4
        
        
        if (choice>4||choice<-1){        //if a value not listed on the menu is input,, an error will be displayed
-           System.out.println("\n\n===Invalid input=="
+           System.out.println("\n\n==="+(choice+1)+" is an Invalid Input=="
                 + "\n===Enter a valid input===\n");
            
        }//end of errorMsg if statement
@@ -69,11 +91,12 @@ public class ConverterAssessment {
        if (choice==-1){         //outro statment
            System.out.println("Thank you for using converter 101\n\n"
              + "===This program was made by==="
-             + "\nName1"
-             + "\nName2"
-             + "\nName3"
-             + "\nName4"
-             + "\nName5");
+             + "\nIago"
+             + "\nJordan"
+             + "\nDaniel"
+             + "\nArbhell"
+             + "\nLeanna"
+                   + "(\nnames respective to menu items)");
        }//end of exit if statement
     }  //end of while statement
 } //end of main method
