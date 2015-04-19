@@ -33,9 +33,14 @@ public class ConverterAssessment {
                choice=userChoice.nextInt();
                choice-=1;                               //Subtract 1 from the users choice to align it with array
                       
-               if (choice==0){//Iago
-                   System.out.println("===Error===\n===Missing Files===\n\n"); 
-               }//end of choice 0
+               if (choice==0){
+        System.out.println("You have entered 1\nEnter cm: ");
+        userInputValue = user_input.nextDouble();
+        val = userInputValue*convert[0]
+
+        System.out.println(UserInputValue+"cm = %.2f in\n\n",val);
+
+        menu();}//end of choice 0
                
                 
                else if (choice==1){ //Jordan
