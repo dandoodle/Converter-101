@@ -24,7 +24,7 @@ public class ConverterAssessment {
                                 //while loop bracket remains open..
            Scanner userChoice=new Scanner(System.in);    //Scanner for the menu
                System.out.println("-----MENU-----"
-                       + "\nEnter 1 for an error message"
+                       + "\nEnter 1 for Centimeters to Inches"
                        + "\nEnter 2 for Meters to feet"
                        + "\nEnter 3 for Celsius to Fahrenheit converter"
                        + "\nEnter 4 for Centimeters to Feet"
@@ -33,7 +33,7 @@ public class ConverterAssessment {
                choice=userChoice.nextInt();
                choice-=1;                               //Subtract 1 from the users choice to align it with array
                       
-               if (choice==0){
+               if (choice==0){//Iago
         System.out.println("You have entered 1\nEnter cm: ");
         userInputValue = user_input.nextDouble();
         val = userInputValue*convert[0]
@@ -58,7 +58,7 @@ public class ConverterAssessment {
         
         System.out.println("You have entered 3\nEnter C:");
         userInputValue=userValScanner.nextDouble();     
-        convert[2]=userInputValue*9/5+32;        //the array is placed in the if statment so that the value of x will be filled
+        convert[2]=userInputValue*9/5+32;        ////the array value [2] is declared here to fill the value of userInputValue
         System.out.printf(userInputValue+" C =%.2f F\n\n", convert[2]);
         
                         } //end of choice 2
