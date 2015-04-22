@@ -82,8 +82,8 @@ public class ConverterAssessment {
           
           System.out.println("You have entered 5 \nEnter Miles: ");
           userInputValue = userValScanner.nextDouble();
-          value = userInputValue*convert[4];
-          System.out.printf(userInputValue+" Mi = %.2f Km\n\n", value);
+          value = userInputValue*convert[4];  //calculates conversion
+          System.out.printf(userInputValue+" Mi = %.2f Km\n\n", value); //displays conversion and rounds number
           }//end of choice 4
        
        
