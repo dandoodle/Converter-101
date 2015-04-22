@@ -36,7 +36,7 @@ public class ConverterAssessment {
                if (choice==0){//Iago
         System.out.println("You have entered 1\nEnter cm: ");
         userInputValue = userValScanner.nextDouble();
-        value = userInputValue*convert[0]
+        value = userInputValue*convert[0];
 
         System.out.printf(userInputValue+"cm = %.2f in\n\n",val);
 
