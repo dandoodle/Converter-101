@@ -35,12 +35,12 @@ public class ConverterAssessment {
                       
                if (choice==0){//Iago
         System.out.println("You have entered 1\nEnter cm: ");
-        userInputValue = user_input.nextDouble();
-        val = userInputValue*convert[0]
+        userInputValue = userValScanner.nextDouble();
+        value = userInputValue*convert[0]
 
-        System.out.println(UserInputValue+"cm = %.2f in\n\n",val);
+        System.out.printf(userInputValue+"cm = %.2f in\n\n",val);
 
-        menu();}//end of choice 0
+        }//end of choice 0
                
                 
                else if (choice==1){ //Jordan
