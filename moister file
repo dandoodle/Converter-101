@@ -38,7 +38,7 @@ public class ConverterAssessment {
         userInputValue = userValScanner.nextDouble();
         value = userInputValue*convert[0];
 
-        System.out.printf(userInputValue+"cm = %.2f in\n\n",val);
+        System.out.printf(userInputValue+"cm = %.2f in\n\n",value);
 
         }//end of choice 0
                
