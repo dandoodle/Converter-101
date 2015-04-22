@@ -74,7 +74,7 @@ public class ConverterAssessment {
                  
    System.out.println("You have entered 4 \nEnter Cm");
    userInputValue = userValScanner.nextDouble();
-   value =  convert[3] * userInputValue;//i dont quite understand this,-- *100.0/100.0;-- seems contradictory   //calculate feet
+   value =  convert[3] * userInputValue;//calculate feet
    System.out.printf(userInputValue+" Cm = %.2f Feet\n\n",value);    //display total
                      }//end of choice 3
        
