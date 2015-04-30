@@ -101,7 +101,7 @@ public class ConverterAssessment {
              + "\nDaniel"
              + "\nArbhell"
              + "\nLeanna"
-                   + "(\nnames respective to menu items)");
+                   + "\n(names respective to menu items)");
        }//end of exit if statement
     }  //end of while statement
 } //end of main method
